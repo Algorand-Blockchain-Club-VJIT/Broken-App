@@ -1,7 +1,7 @@
-# 🚀 Blockchain Club - Developer Qualifier Task
+# Algorand Blockchain Club,VJIT - Developer Qualifier Task
 
 Welcome to the **Developer Qualifier Task** for the Blockchain Club!  
-This is a simple **To-Do web app** built with **Next.js** and **TypeScript** — but it contains a few intentional bugs and issues.
+This is a simple **To-Do web app** — but it contains a few intentional bugs and issues.
 
 Your job is to:
 - **Debug and fix the app**
@@ -28,6 +28,7 @@ Your job is to:
 - Your **Roll Number**
 - Your **Class & Department**
 - A **GIF / video / screenshots** of the final working app
+- What you fixed
 
 > ⚠️ Pull Requests missing these will not be considered.
 
