@@ -19,7 +19,7 @@ Your job is to:
 3. Fix the bugs and get the app working properly.
 4. Push your changes to your branch.
 5. Make a Pull Request (PR) into the **`feature`** branch.
-6. Find Desired Output in Output.gif
+6. Find Desired Output here [Output.gif](https://github.com/Algorand-Blockchain-Club-VJIT/Broken-App/blob/main/output.gif)
 
 ---
 
