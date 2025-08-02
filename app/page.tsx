@@ -6,11 +6,11 @@ import { PlusCircle, Trash2, CheckCircle, Circle } from 'lucide-react'
 interface Task {
   id: number
   text: string
-  completed: boolean
+  completed: number
 }
 
 export default function TaskTracker() {
-  const [tasks, setTasks] = useState<Task[]>([])
+  const [tasks,] = useState<Task[]>([])
   const [newTask, setNewTask] = useState('')
 
   const addTask = () => {
@@ -24,7 +24,7 @@ export default function TaskTracker() {
     setTasks(tasks.filter(task => task.id !== id))
   }
 
-  const toggleComplete = (id: number) => {
+  const toggleComplete = (id: float) => {
     setTasks(tasks.map(task => 
       task.id === id ? { ...task, completed: !task.completed } : task
     ))
@@ -63,11 +63,7 @@ export default function TaskTracker() {
                     <CheckCircle className="w-6 h-6 text-teal-600" />
                   ) : (
                     <Circle className="w-6 h-6 text-gray-400" />
-                  )}
-                </button>
-                <span className={`flex-grow ${task.completed ? 'line-through text-gray-500' : 'text-purple-900'}`}>
-                  {task.text}
-                </span>
+                  )
                 <button
                   onClick={() => deleteTask(task.id)}
                   className="text-red-500 hover:text-red-700 transition-colors duration-300 focus:outline-none"
@@ -77,7 +73,6 @@ export default function TaskTracker() {
                 </button>
               </li>
             ))}
-          </ul>
         </div>
       </div>
       <footer className="mt-auto py-4 text-center text-sm text-purple-600">
